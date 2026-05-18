@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        form{
+            width: 500px;margin: auto;}
+        label{display: inline-block;width: 140px;margin-bottom: 10px;}
+        input{
+            width: 250px;padding: 5px;}
+        fieldset{
+            padding: 20px;}
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Formulario de Contato Para o Tutorial</h1><br><br>
+    <form>
+    <fieldset style="background-color: rgb(212, 212, 212);">
+    <legend style="text-align: center;"><strong>Inclua Seus Dados</strong></legend>
+    <legend>Dados Pessoais:</legend><br><br>
+<label for="name">Nome Completo:</label>
+<input type="text" placeholder="Digite seu Nome" id="name" required><br><br>
+<label for="email">Email:</label>
+<input type="email" placeholder="Email@bom.com.br" id="email"><br><br>
+<label for="senha">Senha:</label>
+<input type="password" placeholder="Digite sua Senha" id="senha" required><br><br>
+<label for="telefone">Telefone:</label>
+<input type="tel" placeholder="(00) 00000-0000" id="telefone" required><br><br>
+<label for="cor">Cor do Kimono:</label>
+<input type="color" id="cor"><br><br>
+<label for="Foto">Foto para matricula:</label>
+<input type="file" id="Foto" required><br><br>
+</fieldset>
+<div style="text-align: center; margin-top: 20px;">
+    <input type="submit" value="Enviar"
+    style="width: 200px;height: 45px;background-color: rgb(54, 127, 236);color: white;border: none;border-radius: 8px;font-size: 16px;cursor: pointer;margin-right: 10px;">
+    <input type="reset" value="Reiniciar"
+    style="width: 200px;height: 45px;background-color: rgb(180, 180, 180);color: white;border: none;border-radius: 8px;font-size: 16px;cursor: pointer;">
+</div>
+    </form>
+</body>
+</html>
